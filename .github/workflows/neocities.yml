@@ -16,6 +16,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
+      #code to maybe help fix the issue with API
+      - name: Remove .DS_Store files
+        run: find public -name '.DS_Store' -delete
+
       # When the dist_dir is ready, deploy it to neocities
       - name: Deploy to neocities
         uses: bcomnes/deploy-to-neocities@v1
