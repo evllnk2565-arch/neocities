@@ -1,54 +1,21 @@
 <!DOCTYPE html>
 <html>
+  <var>
 
 <!-- metadata -->
 <head>
-    <meta charset="UTF-8">
-    <title>Jack's Cool & Awesome Site</title>
-    
-    <!-- style -->
-  <style>
-    /* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-    HTML content. To learn how to do something, just try searching Google for questions like
-    "how to change link color." */
-    html {
-      background-image:url("BocchiBlack.jpg");
-      font-family: "Courier New";
-    }
-    
-    body {
-      background-color: rgb(160, 123, 123);
-      color: rgb(236, 236, 236);
-    }
-    mark {
-      background-color: #e8c0d0ed; /* Light blue */
-    }
-    a:link {
-      color: rgb(168, 55, 255);
-      background-color: transparent;
-    }
-    a:hover {
-      color: rgb(225, 55, 255);
-      background-color: transparent;
-    }
-    
-    #container {
-      border: rgb(236, 236, 236) 7px groove;
-      height: px;
-      width: 500px;
-      margin: auto;
-      padding: 15px;
-      background-color: rgb(71, 71, 71);
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Jack's Cool & Awesome Site</title>
   
+  <!-- Allows .css files to be seperate -->
+  <link id="website-style" href="./style_bocchi.css" rel="stylesheet" type="text/css" media="all">
+
 </head>
 
 <!-- elements -->
 <body>
-
+<h1><center><mark> Hi :3 </mark></center></h1> 
   <div id="container">
-
     <h1><center>WELCOME TO MY SITE!!!!</center></h1>
 
     <p>This is the best page youve ever seen</p>
@@ -58,12 +25,35 @@
     <br>
     <p>yeahhhh sorry for tricking you :/</p>
     <p>oh yeah we love <a href="https://neocities.org/">neocities</a> B)</p>
-    <p style="text-align: right;"><img src="neocities.png"><p>
+    
+    <p>UPDATE: I figured out how to make mulitple themes!!</p>
+    <div> <button onclick="changeStyle(0)" style="background-color: #e8c0d0ed;"> Click Me to Switch to Style 1 </button> 
+      <button onclick="changeStyle(1)"  style="background-color: rgb(170, 240, 255);"> Click Me to Switch to Style 2 </button> </div>
+    
+    <br>
+    <div style="text-align: right;"> <img src="Images/neocities.png"> </div>
 
-    <p>thats it</p>
+    <p>ok that's all I got</p>
     <p>...for now >:3c</p>
     <center><h2>OK BYe</h2></center>
-
+  </div id="container">
+  <h1><center><mark> hi:3 </mark></center></h1>
+  
+<!-- This is a Script I made to switch between the different .css files -->
+  <script>
+    function changeStyle(int) {
+      /* 
+      0 is the Bocchi Theme
+      1 is the Sailor Moon Theme
+      */
+      let themeLink = document.getElementById("website-style");
+       if (int === 0){
+        themeLink.setAttribute("href", "style_bocchi.css");
+      }else if (int === 1) {
+        themeLink.setAttribute("href", "style_bubbles.css")
+      }
+     }
+  </script>
 </body>
 
 </html>

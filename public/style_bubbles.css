@@ -1,0 +1,44 @@
+/* default for whole website */
+html {
+    background-image:url("Images/SailorMoonTheme/BobblesCity.gif");
+    background-size:cover;
+    font-family: "Courier New";
+    /* variables */
+    --primary-color: rgb(152, 126, 192);
+    --DarkGrey: rgb(57, 51, 60);
+    --LightGrey: rgb(237, 213, 237);
+    --accent: rgb(170, 240, 255);
+}
+
+/* Default for main body */
+body {
+    /* Text Color */
+    color: var(--DarkGrey);
+}
+/* Highlighter */
+mark {
+    background-color: var(--accent);
+}
+/* Link Colors */
+a:link {
+    color: rgb(225, 55, 255);
+    background-color: transparent;
+}
+a:hover {
+    color: rgb(113, 92, 234);
+    background-color: transparent;
+}
+
+/* container inside of body */
+#container {
+    border: var(--DarkGrey) 2px groove;
+    height: 570px;
+    width: 470px;
+    margin: auto;
+    padding: 10px;
+    background-color: var(--LightGrey);
+}
+
+#hostedByNeocities{
+    background-color:aqua;
+}
