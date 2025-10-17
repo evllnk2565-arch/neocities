@@ -1,6 +1,6 @@
 /* default for whole website */
 html {
-    background-image:url("Images/SailorMoonTheme/BobblesCity.gif");
+    background-image:url("../Images/SailorMoonTheme/BobblesCity.gif");
     background-size:cover;
     font-family: "Courier New";
     /* variables */

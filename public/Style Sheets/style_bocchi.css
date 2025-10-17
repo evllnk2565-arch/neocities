@@ -7,7 +7,7 @@ html {
     --accent: #e8c0d0ed;
 
     background-color: var(--DarkGrey);
-    background-image:url("Images/BocchiTheme/SpaceBG.jpg");
+    background-image:url("../Images/BocchiTheme/SpaceBG.jpg");
     background-size:contain;
     font-family: "Courier New";
 }
@@ -16,7 +16,7 @@ html {
 body {
     border: var(--DarkGrey) 2px groove;
     background-color: var(--primary-color);
-    background-image: url("Images/BocchiTheme/CrunchyNod.gif");
+    background-image: url("../Images/BocchiTheme/CrunchyNod.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: color-burn;
@@ -47,7 +47,7 @@ a:hover {
     margin: auto;
     padding: 10px;
         background-color: var(--LightGrey);
-        background-image: url("Images/BocchiTheme/JumpForJoy.gif");
+        background-image: url("../Images/BocchiTheme/JumpForJoy.gif");
         background-blend-mode: screen;
         background-size: cover;
 }
